@@ -1,6 +1,6 @@
 import { Alert, Button } from 'flowbite-react';
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { useSelector } from 'react-redux';
@@ -69,6 +69,11 @@ const handleSubmit = async (e) => {
                 </div>
             </form>
             {publishError && ( <Alert className='mt-5' color='failure'> {publishError} </Alert> )}
+            <div className='mt-4 flex justify-center border rounded-full border-blue-500 hover:bg-blue-500 hover:text-white p-1'>
+            <Link to='/home?tab=notes'>
+               <span className='text-xl text'>Back</span>
+            </Link>
+            </div>
     </div>
   )
 }

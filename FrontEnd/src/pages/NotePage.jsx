@@ -52,6 +52,13 @@ if (loading)
       className="prose prose-sm sm:prose-base md:prose-lg lg:prose-xl max-w-full"
       dangerouslySetInnerHTML={{ __html: note && note.content }}
     />
+    <div>
+    <div className='mt-4 flex justify-center border rounded-full border-blue-500 hover:bg-blue-500 hover:text-white p-1 w-1/3'>
+            <Link to='/home?tab=notes'>
+               <span className='text-xl text'>Back</span>
+            </Link>
+    </div>
+    </div>
   </div>
 </main>
 
