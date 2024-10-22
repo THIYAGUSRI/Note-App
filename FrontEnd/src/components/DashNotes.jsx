@@ -89,7 +89,7 @@ export default function DashNotes() {
                 }} className='w-15'>
                 Delete
               </Button>
-            </div>
+            </div>   
           </Card>
         ))
       ) : (
